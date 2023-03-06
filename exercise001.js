@@ -12,6 +12,16 @@ const promise = new Promise((resolve, reject) => {
 });
 
 // Your solution(s) to exercise001 here!
+
+//version then 
+
+promise
+  .then(response =>
+    console.log(`Yay! Promise resolved with response: ${response}`)
+  )
+  .catch(error => console.log(`Boo. Promise rejected with response: ${error}`));
+
+  //version async
 const getPromiseResponse = async () =>{
 	try{
 		const response = await promise;
